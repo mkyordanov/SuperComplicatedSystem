@@ -14,6 +14,7 @@ namespace SuperComplicatedSystem.Data.EFRepository
             Guard.WhenArgument(context, "Context").IsNull().Throw();
             this.Context = context;
             this.DbSet = context.Set<T>();
+            
         }
 
         public IQueryable<T> All

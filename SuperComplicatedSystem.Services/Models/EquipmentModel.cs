@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SuperComplicatedSystem.Services.Models
 {
-    class EquipmentModel
+    public class EquipmentModel
     {
         public EquipmentModel(Equipment dbList)
         {

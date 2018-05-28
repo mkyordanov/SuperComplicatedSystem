@@ -20,21 +20,9 @@ namespace SuperComplicatedSystem.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+            var equipment = this.equipmentService.GetAll();
+            return View(equipment);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

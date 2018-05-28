@@ -8,6 +8,7 @@ using SuperComplicatedSystem.Models;
 using ToDoList.Data.UnitOfWork;
 using SuperComplicatedSystem.Data.EFRepository;
 using Bytes2you.Validation;
+using SuperComplicatedSystem.Services.Models;
 
 namespace SuperComplicatedSystem.Services
 {
@@ -24,7 +25,7 @@ namespace SuperComplicatedSystem.Services
         }
         public IEnumerable<Equipment> GetAll()
         {
-            return this.equipmentRepository.All;
+            return this.equipmentRepository.All.ToList<Equipment>();
         }
     }
 }
