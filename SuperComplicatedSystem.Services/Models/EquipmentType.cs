@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace SuperComplicatedSystem.Services.Models
 {
-    public class EquipmentTypeModel
+    public class ComponentModel
     {
-        public EquipmentTypeModel(equipmentType eqType)
+        public ComponentModel(Components eqType)
         {
-            this.Id = eqType.id;
-            this.Name = eqType.name;
+            this.Id = eqType.Id;
+            this.Name = eqType.Model;
 
         }
 

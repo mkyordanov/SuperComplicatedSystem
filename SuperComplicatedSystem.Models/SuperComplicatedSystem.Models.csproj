@@ -45,8 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Equipment.cs" />
-    <Compile Include="equipmentType.cs" />
+    <Compile Include="Enum\ComponentTypes.cs" />
+    <Compile Include="PC.cs" />
+    <Compile Include="Components.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

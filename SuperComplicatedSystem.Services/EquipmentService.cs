@@ -15,17 +15,17 @@ namespace SuperComplicatedSystem.Services
     public class EquipmentService : IEquipmentService
     {
 
-        private readonly IEFGenericRepository<Equipment> equipmentRepository;
+        private readonly IEFGenericRepository<PC> equipmentRepository;
 
-        public EquipmentService(IEFGenericRepository<Equipment> equipmentRepository)
+        public EquipmentService(IEFGenericRepository<PC> equipmentRepository)
         {
             Guard.WhenArgument(equipmentRepository, "Equipment Repository").IsNull().Throw();
 
             this.equipmentRepository = equipmentRepository;
         }
-        public IEnumerable<Equipment> GetAll()
+        public IEnumerable<PC> GetAll()
         {
-            return this.equipmentRepository.All.ToList<Equipment>();
+            return this.equipmentRepository.All.ToList<PC>();
         }
     }
 }

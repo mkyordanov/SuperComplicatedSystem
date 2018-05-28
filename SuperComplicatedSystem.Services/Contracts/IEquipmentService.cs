@@ -6,6 +6,6 @@ namespace SuperComplicatedSystem.Services.Contracts
 {
     public interface IEquipmentService
     {
-        IEnumerable<Equipment> GetAll();
+        IEnumerable<PC> GetAll();
     }
 }

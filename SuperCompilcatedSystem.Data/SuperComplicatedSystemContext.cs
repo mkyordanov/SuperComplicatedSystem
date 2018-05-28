@@ -15,8 +15,8 @@ namespace SuperCompilcatedSystem.Data
         {
         }
 
-        public virtual IDbSet<Equipment> Equipment { get; set; }
-        public virtual IDbSet<equipmentType> EquipmentType { get; set; }
+        public virtual IDbSet<PC> PC { get; set; }
+        public virtual IDbSet<Components> Components { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

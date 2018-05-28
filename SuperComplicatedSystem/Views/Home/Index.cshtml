@@ -1,8 +1,14 @@
-﻿@model List<SuperComplicatedSystem.Models.Equipment>
+﻿@model List<SuperComplicatedSystem.Models.PC>
 
-@foreach (var item in Model)
+@foreach (var PC in Model)
 {
-    <div>@item.name
-        <div>@item.equipmentType.name</div>
+    <div>@PC.name
+    @foreach (var component in @PC.components)
+    {
+        <div>@component.Type</div>
+        <div>@component.Model</div>
+        <br/>
+    }
     </div>
+    <br/>
 }

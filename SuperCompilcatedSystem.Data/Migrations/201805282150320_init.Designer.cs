@@ -13,7 +13,7 @@ namespace SuperCompilcatedSystem.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201805271459060_init"; }
+            get { return "201805282150320_init"; }
         }
         
         string IMigrationMetadata.Source
