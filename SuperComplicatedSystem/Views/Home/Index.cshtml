@@ -1,14 +1,26 @@
 ﻿@model List<SuperComplicatedSystem.Models.PC>
 
-@foreach (var PC in Model)
+
+@for (int i = 0; i < Model.Count; i++)
 {
-    <div>@PC.name
-    @foreach (var component in @PC.components)
-    {
-        <div>@component.Type</div>
-        <div>@component.Model</div>
-        <br/>
-    }
+    <div class="@i PC">
+        <div class="@i name">
+            <span class="@i">@Model[i].name </span>
+        </div>
+        @foreach (var component in Model[i].components)
+        {
+            <div class="@i type">
+                <span class="@i">@component.Type</span>
+            </div>
+            <div class="@i model">
+                <span class="@i">@component.Model</span>
+            </div>
+        }
     </div>
-    <br/>
+
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/test")
 }
