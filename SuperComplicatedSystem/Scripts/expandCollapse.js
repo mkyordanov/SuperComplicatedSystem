@@ -27,7 +27,6 @@ function expand(e) {
     for (var i = 0; i < minus.length; i++) {
         minus[i].addEventListener("click", collapse);
     }
-    console.log(minus);
     if (current.nodeName == "SPAN") {
         current = current.parentElement;
     }
