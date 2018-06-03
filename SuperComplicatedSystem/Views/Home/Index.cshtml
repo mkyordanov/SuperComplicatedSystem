@@ -6,21 +6,19 @@
     <div class="PC">
         <div class="name">
             <span class="plus">+</span>
-            <span>@Model[i].name </span>
+            <span class="file">@Model[i].name </span>
             @foreach (var component in Model[i].components)
             {
                 <div class="type">
                     <span class="plus type">+</span>
-                    <span class="type">@component.Type</span>
+                    <span class="type file">@component.Type</span>
                     <div class="model">
                         <span></span>
                         <span class="model">@component.Model</span>
                     </div>
                 </div>
-
             }
         </div>
-
     </div>
 }
 

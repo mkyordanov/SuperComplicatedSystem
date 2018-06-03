@@ -13,7 +13,7 @@ for (var i = 0; i < model.length; i++) {
 }
 
 for (var i = 0; i < plus.length; i++) {
-    plus[i].addEventListener("click", expand);     
+    plus[i].addEventListener("click", expand);
 };
 
 function expand(e) {
@@ -27,9 +27,11 @@ function expand(e) {
     for (var i = 0; i < minus.length; i++) {
         minus[i].addEventListener("click", collapse);
     }
+
     if (current.nodeName == "SPAN") {
         current = current.parentElement;
     }
+
     for (var i = 2; i < current.children.length; i++) {
         current.children[i].style.display = "block";
         current.children[i].children[0].style.display = "inline-block";
@@ -52,6 +54,7 @@ function collapse(e) {
     if (current.nodeName == "SPAN") {
         current = current.parentElement;
     }
+
     for (var i = 2; i < current.children.length; i++) {
         current.children[i].style.display = "none";
         current.children[i].children[0].style.display = "none";
